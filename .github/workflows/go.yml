@@ -62,12 +62,12 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: C:\Users\iburb\Final-main1  
+          images: C:\Users\iburb\Final-main  
 
       - name: Build and push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: C:\Users\iburb\Final-main1  
+          context: C:\Users\iburb\Final-main 
           push: true
           tags: ralphiko/final-main1:${{ github.sha }}
           labels: org.opencontainers.image.created=${{ github.run_at }}
